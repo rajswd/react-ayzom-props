@@ -1,0 +1,9 @@
+.person-block{
+  text-align: center;
+  clear: both;
+  padding: 1em;
+  border: 1px solid #ddd;
+}
+.child-content{
+  text-align: right;
+}
