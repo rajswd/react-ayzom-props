@@ -33,8 +33,14 @@ h4{
   animation-duration: 3s;
 }
 ul{
+  height:95vh;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 li{
-  margin-bottom: 5px;
+  margin: 5px;
+  max-width: 15em;
 }
