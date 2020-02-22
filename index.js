@@ -20,16 +20,14 @@ class App extends Component {
   }
 
   render() {
-    const list = [], ul$;
-    let i =1;
-    this.state.arrName.forEach(person => {
-      list.push(<li><Hello name={person} counter={i++} childAction={this.childClick} /> </li>);
-    });
-    ul$ = <ul className="test-cl">{list}</ul>;
+    const hello$;
+    
+    hello$ = this.state.arrName.map((person, index) => <Hello name={person} counter={index} childAction={this.childClick} />);
+    
 
     return (
       <div>
-         {ul$}         
+         {$}         
             
       </div>
     );
