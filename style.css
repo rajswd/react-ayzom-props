@@ -14,33 +14,16 @@
   100%{line-height: 0vh;background: green;animation:width20;animation-iteration-count: infinite;animation-duration: 20s;}
 }
 
-h1, p {
-  font-family: Lato;
-}
 
-h4{
-  margin-left:auto;
-  margin-right: auto;
-  overflow: hidden;
-  white-space: nowrap;
-  color:Red;
-  display: flex;
-  justify-content: center;
-  background: red;
-  line-height: 70vh; 
-  animation: animation, width20;
-  animation-iteration-count: infinite;
-  animation-duration: 3s;
-}
 .body{
   height:95vh;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 .person-block{
+  cursor: pointer;
   margin: 5px;
-  max-width: 15em;
+  width: 15em;
 }

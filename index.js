@@ -14,15 +14,21 @@ class App extends Component {
   }
 
 
-  childClick(event){
-    alert(event);
-    console.log(event, this.state.title.fName);
+  childClick(idx, msg){
+    alert(msg);
+    const persons = [...this.state.arrName];
+    persons.splice(idx, 1);
+    this.setState({arrName:persons});
   }
 
   render() {
     const hello$;
     
-    hello$ = this.state.arrName.map((person, index) => <Hello className="person-block" name={person} counter={index} childAction={this.childClick} />);
+    hello$ = this.state.arrName.map((person, index) => 
+        <Hello className="person-block" 
+              name={person} 
+              counter={index} 
+              childAction={this.childClick} />);
     
 
     return (
