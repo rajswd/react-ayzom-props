@@ -7,7 +7,7 @@ const Hello = (props) => {
   return (
             
           <Person  name={name} counter={props.counter} click={props.childAction}>
-            <h5> {props.name.fName + "---"+ props.name.lName }!!</h5> 
+            <h5>!! {props.name.fName + props.name.lName } !!</h5> 
           </Person>
       
     );
