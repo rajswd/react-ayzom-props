@@ -32,7 +32,7 @@ h4{
   animation-iteration-count: infinite;
   animation-duration: 3s;
 }
-ul{
+.body{
   height:95vh;
   list-style: none;
   display: flex;
@@ -40,7 +40,7 @@ ul{
   justify-content: center;
   align-items: center;
 }
-li{
+.person-block{
   margin: 5px;
   max-width: 15em;
 }

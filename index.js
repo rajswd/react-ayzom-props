@@ -22,12 +22,12 @@ class App extends Component {
   render() {
     const hello$;
     
-    hello$ = this.state.arrName.map((person, index) => <Hello name={person} counter={index} childAction={this.childClick} />);
+    hello$ = this.state.arrName.map((person, index) => <Hello className="person-block" name={person} counter={index} childAction={this.childClick} />);
     
 
     return (
-      <div>
-         {$}         
+      <div class="body">
+         {hello$}         
             
       </div>
     );
